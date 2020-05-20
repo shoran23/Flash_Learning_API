@@ -36776,3 +36776,42 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 142)
 
 
+  [1m[35m (55.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (37.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Create (120.8ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Musical Instruments"], ["created_at", "2020-05-16 19:39:04.476487"], ["updated_at", "2020-05-16 19:39:04.476487"]]
+  [1m[35m (38.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Create (32.5ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Programming Terms"], ["created_at", "2020-05-16 19:39:04.677482"], ["updated_at", "2020-05-16 19:39:04.677482"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (80.4ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCard Create (38.1ms)[0m  [1m[32mINSERT INTO "cards" ("title", "definition", "created_at", "updated_at", "topic_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Guitar"], ["definition", "A stringed musical instrument, with a fretted fingerboard, typically incurved sides, and six or twelve strings, played by plucking or strumming with the fingers or pick."], ["created_at", "2020-05-16 19:39:04.910850"], ["updated_at", "2020-05-16 19:39:04.910850"], ["topic_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCard Create (1.0ms)[0m  [1m[32mINSERT INTO "cards" ("title", "definition", "created_at", "updated_at", "topic_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Piano"], ["definition", "A large keyboard musical instrument with a wooden case enclosing a soundboard and metal strings, which are struck by hammers when the keys are depressed. The strings' vibration is stopped by dampers when the keys are released and can be regulated for length and volume by two or three pedals"], ["created_at", "2020-05-16 19:39:04.957459"], ["updated_at", "2020-05-16 19:39:04.957459"], ["topic_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("title", "definition", "created_at", "updated_at", "topic_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Volin"], ["definition", "A stringed musical instrument of treble pitch, played with a horsehair bow. The classical European violin was developed in the 16th century. It has four strings and a body of characteristic rounded shape, narrowed at the middle and with two f-shaped sound holes."], ["created_at", "2020-05-16 19:39:04.972327"], ["updated_at", "2020-05-16 19:39:04.972327"], ["topic_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("title", "definition", "created_at", "updated_at", "topic_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Trumpet"], ["definition", "A brass musical instrument with a flared bell and a bright, penetrating tone. The modern instrument has the tubing looped to form a straight-sided coil, with three valves."], ["created_at", "2020-05-16 19:39:04.980254"], ["updated_at", "2020-05-16 19:39:04.980254"], ["topic_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("title", "definition", "created_at", "updated_at", "topic_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Algorithm"], ["definition", "An algorithm is a set of instructions or rules designed to solve a definite problem. The problem can be simple like adding two numbers or a complex one, such as converting a video file from one format to another."], ["created_at", "2020-05-16 19:39:04.989073"], ["updated_at", "2020-05-16 19:39:04.989073"], ["topic_id", 2]]
+  [1m[35m (17.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("title", "definition", "created_at", "updated_at", "topic_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Program"], ["definition", "A computer program is termed as an organized collection of instructions, which when executed perform a specific task or function. A program is processed by the central processing unit (CPU) of the computer before it is executed. An example of a program is Microsoft Word, which is a word processing application that enables users to create and edit documents. The browsers that we use are also programs created to help us browse the internet."], ["created_at", "2020-05-16 19:39:05.014620"], ["updated_at", "2020-05-16 19:39:05.014620"], ["topic_id", 2]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("title", "definition", "created_at", "updated_at", "topic_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "API"], ["definition", "Application Programming Interface (API) is a set of rules, routines, and protocols to build software applications. APIs help in communication with third party programs or services, which can be used to build different software. Companies such as Facebook and Twitter actively use APIs to help developers gain easier access to their services."], ["created_at", "2020-05-16 19:39:05.028847"], ["updated_at", "2020-05-16 19:39:05.028847"], ["topic_id", 2]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("title", "definition", "created_at", "updated_at", "topic_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Boolean"], ["definition", "A Boolean expression or Boolean logic is an expression used for creating statements that are either TRUE or FALSE. Boolean expressions use AND, OR, XOR, NOT and NOR operators with conditional statements in programming, search engines, algorithms, and formulas. Boolean expressions are also called comparison expressions, conditional expressions, and relational expressions."], ["created_at", "2020-05-16 19:39:05.041088"], ["updated_at", "2020-05-16 19:39:05.041088"], ["topic_id", 2]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
